@@ -29,3 +29,5 @@ The opportunity to make a difference in the lives of eager students.
 
  - Navigate to app directory:    ``` .../BoostedWisdom/my_app/ ```
  - Install Dependencies:         ``` flutter pub get ```
+ - Run the App:                  ``` flutter run ```
+ - Choose Connect devices:       ``` [2]: Chrome (chrome) ```
