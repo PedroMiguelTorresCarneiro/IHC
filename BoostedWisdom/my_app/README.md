@@ -27,5 +27,5 @@ The opportunity to make a difference in the lives of eager students.
 
 ## HOW TO RUN
 
- - Navigate to app directory
-   ``` .../BoostedWisdom/my_app/ ```
+ - Navigate to app directory:    ``` .../BoostedWisdom/my_app/ ```
+ - Install Dependencies:         ``` flutter pub get ```
