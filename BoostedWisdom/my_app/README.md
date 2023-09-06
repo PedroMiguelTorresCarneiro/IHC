@@ -28,4 +28,4 @@ The opportunity to make a difference in the lives of eager students.
 ## HOW TO RUN
 
  - Navigate to app directory
-   ``` .../BoostedWisdom/my_app/
+   ``` .../BoostedWisdom/my_app/ ```
