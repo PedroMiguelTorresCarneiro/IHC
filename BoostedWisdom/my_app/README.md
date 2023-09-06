@@ -6,7 +6,7 @@ BoostWis is an innovative online platform designed to unlock your academic poten
 
 At BoostWis, we believe that education is the key to personal growth and success. We connect you with carefully selected educators who are experts in their fields, ensuring that you receive the best possible guidance and knowledge. Whether you're a student looking to excel in your studies or an educator eager to share your expertise, BoostWis is the place to be.
 
-### For Students:
+### - For Students:
 
 BoostWis provides a wide range of subjects and courses tailored to your learning goals. Our platform offers:
 
@@ -15,7 +15,7 @@ Educators who are not only knowledgeable but also passionate about teaching.
 A user-friendly interface that simplifies the learning experience.
 Access to quizzes and interactive lessons to reinforce your understanding.
 
-### For Educators:
+### - For Educators:
 
 Joining BoostWis as an educator means being part of a community committed to educational excellence. Here's what we offer:
 
