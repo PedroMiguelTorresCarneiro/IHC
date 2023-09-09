@@ -320,6 +320,7 @@ class StudentLandingPage extends StatelessWidget {
                 (route) => false, // Remove all routes from the stack
               );
             },
+            tooltip: 'SignOUT',
           ),
         ],
       ),
@@ -340,9 +341,16 @@ class StudentLandingPage extends StatelessWidget {
                   const Text('Student Name: John Doe'),
                   const Text('Age: 20'),
                   const Text('Attending Scholar Degree: Computer Science'),
-                  const Text('Attending Subjects:'),
-
+                  // Button to Update Personal Info
+                  ElevatedButton(
+                    onPressed: () {
+                      // Show the update personal info dialog
+                      _showUpdatePersonalInfoDialog(context);
+                    },
+                    child: const Text('Update Personal Info'),
+                  ),
                   // ---------------------------------------------------------------------------- List of Subjects and Grades
+                  const Text('Attending Subjects:'),
                   Column(
                     mainAxisAlignment:
                         MainAxisAlignment.center, // Center the cards
@@ -414,14 +422,6 @@ class StudentLandingPage extends StatelessWidget {
                   // Add more subjects and grades as needed
 
                   // -------------------------------------------------------------------- Button for updating personal info
-                  // Button to Update Personal Info
-                  ElevatedButton(
-                    onPressed: () {
-                      // Show the update personal info dialog
-                      _showUpdatePersonalInfoDialog(context);
-                    },
-                    child: const Text('Update Personal Info'),
-                  ),
                 ],
               ),
             ),
@@ -540,12 +540,14 @@ class StudentLandingPage extends StatelessWidget {
                 onPressed: () {
                   // Handle Facebook link here
                 },
+                tooltip: 'Facebook/BoostedWisdom',
               ),
               IconButton(
                 icon: const Icon(Icons.camera),
                 onPressed: () {
                   // Handle Instagram link here
                 },
+                tooltip: 'Instagram/BoostedWisdom',
               ),
             ],
           ),
@@ -556,6 +558,7 @@ class StudentLandingPage extends StatelessWidget {
         onPressed: () {
           // Handle library button click
         },
+        tooltip: 'LIBRARY',
         child: const Icon(Icons.library_books),
       ),
     );
@@ -676,6 +679,7 @@ class BillingPage extends StatelessWidget {
               // Navigate back to StudentLandingPage when Exit is pressed
               Navigator.pop(context);
             },
+            tooltip: 'EXIT',
           ),
         ],
       ),
@@ -802,12 +806,14 @@ class BillingPage extends StatelessWidget {
                 onPressed: () {
                   // Handle Facebook link here
                 },
+                tooltip: 'Facebook/BoostedWisdom',
               ),
               IconButton(
                 icon: const Icon(Icons.camera),
                 onPressed: () {
                   // Handle Instagram link here
                 },
+                tooltip: 'Instagram/BoostedWisdom',
               ),
             ],
           ),
@@ -966,6 +972,7 @@ class _EducatorLandingPageState extends State<EducatorLandingPage> {
                 (route) => false, // Remove all routes from the stack
               );
             },
+            tooltip: 'SignOUT',
           ),
         ],
       ),
@@ -983,8 +990,6 @@ class _EducatorLandingPageState extends State<EducatorLandingPage> {
                   const Text('Educator Name: John Smith'),
                   const Text('Age: 30'),
                   const Text('Degree: Ph.D. in Computer Science'),
-                  const Text('Teaching Subjects:'),
-
                   // ----------------------------------------------------------- Button to Update Personal Info
                   // Button to Update Personal Info
                   ElevatedButton(
@@ -994,8 +999,8 @@ class _EducatorLandingPageState extends State<EducatorLandingPage> {
                     },
                     child: const Text('Update Personal Info'),
                   ),
-
                   // ----------------------------------------------------------- Display the subjects
+                  const Text('Teaching Subjects:'),
                   const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -1144,12 +1149,14 @@ class _EducatorLandingPageState extends State<EducatorLandingPage> {
                 onPressed: () {
                   // Handle Facebook link here
                 },
+                tooltip: 'Facebook/BoostedWisdom',
               ),
               IconButton(
                 icon: const Icon(Icons.camera),
                 onPressed: () {
                   // Handle Instagram link here
                 },
+                tooltip: 'Instagram/BoostedWisdom',
               ),
             ],
           ),
@@ -1315,6 +1322,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onPressed: () {
               // Handle navigation to Home
             },
+            tooltip: 'Home',
           ),
           IconButton(
             // ABOUT BUTTON
@@ -1323,6 +1331,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.pushNamed(
                   context, '/about'); // Navigate to the AboutPage
             },
+            tooltip: 'ABOUT',
           ),
           IconButton(
             // SignIN BUTTON
@@ -1336,6 +1345,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               );
             },
+            tooltip: 'SignIN',
           ),
           IconButton(
             // SignUP BUTTON
@@ -1349,6 +1359,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               );
             },
+            tooltip: 'SignUP',
           ),
         ],
       ),
@@ -1589,6 +1600,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: () {
                     // Handle navigation to Facebook
                   },
+                  tooltip: 'Facebook/BoostedWisdom',
                 ),
                 IconButton(
                   icon: const Icon(Icons.camera),
@@ -1596,6 +1608,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: () {
                     // Handle navigation to Instagram
                   },
+                  tooltip: 'Instagram/BoostedWisdom',
                 ),
               ],
             ),
@@ -1688,6 +1701,7 @@ class AboutPage extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context); // Navigate back to MyHomePage
             },
+            tooltip: 'Home',
           ),
         ],
       ),
