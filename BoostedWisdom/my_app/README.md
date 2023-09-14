@@ -24,7 +24,16 @@ Tools to create and deliver engaging lessons.
 A supportive network of fellow educators and resources to enhance your teaching.
 The opportunity to make a difference in the lives of eager students.
 
+- ###  For Testing:
+You have 2 pre-defined SignIns :
+# Student:
+- student@ua.pt
+- Start123
+# Educator
+- educator@ua.pt
+- Start123
 
+  
 ## HOW TO RUN
 
  - First have to install Flutter:  ``` https://docs.flutter.dev/get-started/install```
